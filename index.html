@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fases da Lua</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1026;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111936, #302b63);
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #d1d5db;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            color: #facc15;
+            margin-bottom: 15px;
+        }
+
+        .fases {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .fase {
+            background: #171d3a;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .fase:hover {
+            transform: translateY(-8px);
+        }
+
+        .lua {
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+
+        .fase h3 {
+            color: #facc15;
+            margin-bottom: 10px;
+        }
+
+        .fase p {
+            color: #d1d5db;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #070b1c;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 800px) {
+            .fases {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .fases {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌙 Fases da Lua</h1>
+        <p>Conheça as diferentes fases do nosso satélite natural</p>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>O que são as fases da Lua?</h2>
+
+            <p>
+                As fases da Lua acontecem porque, conforme a Lua
+                orbita a Terra, vemos diferentes partes de sua metade
+                iluminada pelo Sol.
+            </p>
+        </section>
+
+        <section class="fases">
+
+            <div class="fase">
+                <div class="lua">🌑</div>
+                <h3>Lua Nova</h3>
+                <p>
+                    A Lua fica entre a Terra e o Sol.
+                    A parte iluminada fica voltada para o Sol,
+                    tornando a Lua praticamente invisível para nós.
+                </p>
+            </div>
+
+            <div class="fase">
+                <div class="lua">🌒</div>
+                <h3>Lua Crescente</h3>
+                <p>
+                    Uma pequena parte iluminada começa a aparecer.
+                    A área iluminada aumenta a cada dia.
+                </p>
+            </div>
+
+            <div class="fase">
+                <div class="lua">🌓</div>
+                <h3>Quarto Crescente</h3>
+                <p>
+                    Aproximadamente metade da face da Lua
+                    aparece iluminada.
+                </p>
+            </div>
+
+            <div class="fase">
+                <div class="lua">🌔</div>
+                <h3>Gibosa Crescente</h3>
+                <p>
+                    Mais da metade da Lua está iluminada,
+                    aproximando-se da Lua Cheia.
+                </p>
+            </div>
+
+            <div class="fase">
+                <div class="lua">🌕</div>
+                <h3>Lua Cheia</h3>
+                <p>
+                    A face da Lua voltada para a Terra
+                    aparece completamente iluminada.
+                </p>
+            </div>
+
+            <div class="fase">
+                <div class="lua">🌖</div>
+                <h3>Gibosa Minguante</h3>
+                <p>
+                    A parte iluminada começa a diminuir
+                    depois da Lua Cheia.
+                </p>
+            </div>
+
+            <div class="fase">
+                <div class="lua">🌗</div>
+                <h3>Quarto Minguante</h3>
+                <p>
+                    Aproximadamente metade da face lunar
+                    aparece iluminada novamente.
+                </p>
+            </div>
+
+            <div class="fase">
+                <div class="lua">🌘</div>
+                <h3>Minguante</h3>
+                <p>
+                    Apenas uma pequena parte da Lua
+                    permanece iluminada antes de voltar
+                    à Lua Nova.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Fases da Lua</p>
+    </footer>
+
+</body>
+</html>

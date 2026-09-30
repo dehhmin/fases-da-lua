@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1026;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #111936, #302b63);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #d1d5db;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    color: #facc15;
+    margin-bottom: 15px;
+}
+
+.fases {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.fase {
+    background: #171d3a;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.fase:hover {
+    transform: translateY(-8px);
+}
+
+.lua {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.fase h3 {
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+.fase p {
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+footer {
+    background: #070b1c;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    color: #9ca3af;
+}
+
+@media (max-width: 800px) {
+    .fases {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .fases {
+        grid-template-columns: 1fr;
+    }
+}
